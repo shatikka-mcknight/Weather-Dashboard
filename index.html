@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traveler's Weather Dashboard</title>
+    
+    <link rel="stylesheet" href="assets/css/sytlesheet.css">
+
+</head>
+<body>
+    <header>
+        <div>
+            <h2>Traveler's Weather Dashboard</h2>
+        </div>
+    </header>
+    <div class="container">
+        <aside class="searhDataStore">
+            <div id="searchContainer">
+                <p id="citySearch">Search for City</p>
+                <div>
+                   <p id="errorMessage"></p>
+                    <input type="text" placeholder="Enter City Location" id="searchData">
+                    <button id="submitCity">Search Now</button>
+                </div>
+            </div>
+        </aside> 
+        <div id="allWeatherContainer" class="">
+            <div id="mainWeatherDisplay" class="">
+                <h3 id="cityName" class="headline"></h3>
+                <div id="infoDisplay">
+                    <div ><img id="weatherIcon"></div>
+                      <p class="tempDegree">Temp:</p>
+                      <p class="humityPercent">Humity:</p>
+                      <p class="windSpeed">Wind Speed:</p>
+                      <p class="uvIndex">UV Index:</p>
+                </div>
+            </div>
+            <!-- <div  id="futureDisplay">
+                <h3 class="headline date">Date</h3>
+                <div class="card" style="width: 200px;">
+                    <div class="card-body">
+                      <h4 class="card-title">Card title</h4>
+                      <hr>
+                      <img src="" class="card-img-top" alt="">
+                      <p class="card-text">Temp:<span class="tempDegree"></span></p>
+                      <p class="card-text">Humity:<span class="tempDegree"></span></p>
+                    </div>
+                  </div>
+            </div> -->
+        </div>
+
+    </div>
+    <!--Below is link to cusdom javascript file in main folder assets-->
+   <script src="assets/js/script.js"></script>
+
+</body>
+</html>
