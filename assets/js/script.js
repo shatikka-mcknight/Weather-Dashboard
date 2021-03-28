@@ -1,5 +1,5 @@
 let appId = "ccd48ccf113eeb3d3f3a46d2f1e3ed7f";
-let units = "metric";
+let units = "imperial";
 let searchMethod = "zip";
 
 //create a function to determine what data is being enter for the #searchData zip code or City name, state code and country code
@@ -37,7 +37,8 @@ function init(resultFromOpenWeather) {
     var cityNameSearch = document.getElementById("cityName")
     var weatherIconResults = document.getElementById("weatherIcon")
     var weatherDescriptionResults = document.getElementById("weatherDescription");
-    var tempDegreeResults = document.getElementById("tempDegree");
+    var tempDegreeResults1 = document.getElementById("tempDegree1");
+    var tempDegreeResults2 = document.getElementById("tempDegree2");
     var humityPercentResults = document.getElementById("humityPercent");
     var windSpeedResults = document.getElementById("windSpeed");
     var uvIndexResults = document.getElementById("uvIndex");
@@ -49,23 +50,23 @@ function init(resultFromOpenWeather) {
     let resultWeatherMain = resultFromOpenWeather.main;
     let resultWeatherWind = resultFromOpenWeather.wind;
 
-    // capitalWords.join(" ");
 
     cityNameSearch.innerHTML = "Location: " + resultWeatherArea;
     weatherDescriptionResults.innerText = "Description: "
         + resultWeatherDisplay;
     
-
-    tempDegreeResults.innerHTML = "Temp: "
-        + "<li> Current: " + Math.floor(resultWeatherMain.temp) + "&#176</li>"
-        + "<li> High: " + Math.floor(resultWeatherMain.temp_max) + "&#176</li>"
-        + "<li> Low: " + Math.floor(resultWeatherMain.temp_min) + "&#176</li>";
+    tempDegreeResults1.innerHTML =
+        Math.floor(resultWeatherMain.temp) + "&#176";
+    
+    
+    tempDegreeResults2.innerHTML = 
+        "Low: " + Math.floor(resultWeatherMain.temp_min) + "&#176 " +
+        "High: " + Math.floor(resultWeatherMain.temp_max) + "&#176 ";
     
     humityPercentResults.innerHTML = "Humidity: " + Math.floor(resultWeatherMain.humidity);
     
     windSpeedResults.innerHTML = "Wind Speed: " + Math.floor(resultWeatherWind.speed);
 }
-    // console.log();
 
 
 //Setting up the search button interaction

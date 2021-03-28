@@ -1,15 +1,85 @@
 
-#searchStoreData {
-    background-color: whitesmoke;
-    width: 30%; 
-    height: 700px;
-    float: left;
-    padding: 15px;
+body {
+    background-image: url(https://images.unsplash.com/photo-1508697014387-db70aad34f4d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px;
+    padding: 0px;
 }
 
-#mainSection {
+#full-conatiner {
+    width: 950px;
+    margin: auto;
+}
+
+#mainWeatherDisplay {
+    background-color: rgba(121, 224, 145, 0.1);
+    box-shadow: 1px 1px 5px black;
     padding: 15px;
+    border-radius: 10px;
+    position: absolute;
+    width: 50%;
+    margin-top: 15px;
+}
+
+header h1 {
+ background-color: rgba(76, 175, 80, 0.3);
+ margin: 0px;
+ height: 100px;
+ text-align: center;
+position: relative;
+padding-top: 50px ;
+color: #ffffff;
+}
+
+#searchContainer {
+    background-color:whitesmoke;
+    padding: 10px;
+
+}
+
+hr {
     width: auto;
+    color: yellow;
+}
+
+.floatEl {
+    float: left;
+}
+
+.searhDataStore {
+    width: 300px; 
+    padding: 15px;
+}    
+
+.divide {
+    border-right: 1px solid yellow;
+    height: 300px;
+    margin-top: 10px;
+}
+
+.degree {
+    font-size: 30px;
+}
+
+.clear {
+    float: none;
+}
+
+#allWeatherContainer {
+    float: right;
+    width: 600px;
+}
+
+
+.card {
+    background-color: rgba(121, 224, 145, 0.1);
+    box-shadow: 1px 1px 5px black;
+    padding: 15px;
+    border-radius: 10px;
+    width: 15%;
+    margin-top: 15px;
+    visibility: hidden;
 }
 
 
