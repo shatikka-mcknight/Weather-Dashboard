@@ -21,7 +21,7 @@
                 <p id="citySearch">Search for City</p>
                 <div>
                    <p id="errorMessage"></p>
-                    <input type="text" placeholder="Enter City Location" id="searchData">
+                    <input type="text" placeholder="Enter City Location or Zip" id="searchData">
                     <button id="submitCity">Search Now</button>
                 </div>
             </div>
@@ -30,11 +30,12 @@
             <div id="mainWeatherDisplay" class="">
                 <h3 id="cityName" class="headline"></h3>
                 <div id="infoDisplay">
-                    <div ><img id="weatherIcon"></div>
-                      <p class="tempDegree">Temp:</p>
-                      <p class="humityPercent">Humity:</p>
-                      <p class="windSpeed">Wind Speed:</p>
-                      <p class="uvIndex">UV Index:</p>
+                    <div > <img id="weatherIcon"></div>
+                      <p id="weatherDescription"></p>
+                      <p id="tempDegree"></p>
+                      <p id="humityPercent"></p>
+                      <p id="windSpeed"></p>
+                      <!--<p id="uvIndex">UV Index:</p>-->
                 </div>
             </div>
             <!-- <div  id="futureDisplay">
